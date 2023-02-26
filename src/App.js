@@ -2,7 +2,7 @@ import * as Projects from './Projects';
 
 function App() {
   return (
-    <Projects.Project1 />
+    <Projects.Project2 />
   );
 }
 

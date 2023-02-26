@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "./App.css";
+import './App.css';
 
 export function Project1() {
     const [selectedTheme,setSelectedTheme] = useState('white')
@@ -15,8 +15,8 @@ export function Project1() {
     }
 
     return (
-        <div style={{ backgroundColor: selectedTheme}} className="App_1">
-            <button onClick={handleClick} className="Button_1">
+        <div style={{ backgroundColor: selectedTheme}} className='App_1'>
+            <button onClick={handleClick} className='Button_1'>
                 Click Me!
             </button>
         </div>
@@ -24,13 +24,25 @@ export function Project1() {
 }
 
 export function Project2() {
-    return(
-        <div 
-            style={{ backgroundColor: 'blue'}}
-            className="App"
-        >
-            <button>
-                Click me
+    const [selectedTheme,setSelectedTheme] = useState('')
+    const list = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F']
+    function handleClick() {
+        const theme = '#'.concat(
+            list[Math.floor(Math.random() * (list.length - 1))],
+            list[Math.floor(Math.random() * (list.length - 1))],
+            list[Math.floor(Math.random() * (list.length - 1))],
+            list[Math.floor(Math.random() * (list.length - 1))],
+            list[Math.floor(Math.random() * (list.length - 1))],
+            list[Math.floor(Math.random() * (list.length - 1))]
+        )
+        setSelectedTheme(theme)
+    }
+
+    return (
+        <div style={{ backgroundColor: selectedTheme}} className='App_2'>
+            <h1 className='text'>{selectedTheme}</h1>
+            <button onClick={handleClick} className='Button_2'>
+                Click Me!
             </button>
         </div>
     )

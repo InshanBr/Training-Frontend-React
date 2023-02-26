@@ -1,6 +1,6 @@
 # Training Frontend Projects Using React
 
-This repository is to save my training projects coming from "100+ JavaScript Projects for Beginners!" of site jsbeginners
+This repository is to save my training projects coming from "100+ JavaScript Projects for Beginners!" of site jsbeginners.
 
 https://jsbeginners.com/javascript-projects-for-beginners/
 
